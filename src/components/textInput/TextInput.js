@@ -4,6 +4,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { makeStyles, useTheme } from "@rneui/themed";
 
 import AppIcons from "../AppIcon";
+import useStyles from "./TextInput.styles";
 
 const TextInput = ({
   align = "center",
@@ -44,39 +45,5 @@ const TextInput = ({
     />
   );
 };
-
-const useStyles = makeStyles((theme) => ({
-  container: {
-    //background: theme.colors.white,
-    alignSelf: "center",
-  },
-  inputContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-    //marginVertical: 5,
-    borderWidth: 1,
-    borderColor: theme.colors.inputBorder,
-    borderRadius: 10,
-    backgroundColor: theme.colors.cardColor,
-    width: "100%",
-    // padding: 16,
-
-    paddingHorizontal: 15,
-    paddingVertical: 5,
-  },
-  revealInputIcon: {
-    paddingLeft: 5,
-  },
-  text: {
-    color: theme.colors.text,
-    fontFamily: theme.FONT.regular,
-    paddingHorizontal: 10,
-    flex: 1,
-  },
-  label: {
-    color: "red", //theme.colors.inputLabel,
-    fontFamily: theme.FONT.regular,
-  },
-}));
 
 export default TextInput;
