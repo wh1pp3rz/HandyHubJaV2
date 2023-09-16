@@ -42,7 +42,14 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "$(PROFUCT_NAME) accesses your photos to let you set a profile image.",
+          "cameraPermission": "Allow $(PROFUCT_NAME) to access your camera."
+        }
+      ]
     ],
     "scheme": "handy-hub-ja",
     "extra": {

@@ -12,5 +12,6 @@ export default {
     black: "#FFF",
     sandybrown: "#F2994A",
     badge: "#383838",
+    red: "#eb5757",
   },
 };

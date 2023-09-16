@@ -1,15 +1,8 @@
 import React from "react";
 import { View, TouchableOpacity } from "react-native";
-import {
-  DrawerContentScrollView,
-  DrawerItemList,
-} from "@react-navigation/drawer";
+import { DrawerContentScrollView } from "@react-navigation/drawer";
 import { Text, useTheme } from "@rneui/themed";
-import {
-  Ionicons,
-  MaterialIcons,
-  MaterialCommunityIcons,
-} from "@expo/vector-icons";
+import { MaterialIcons } from "@expo/vector-icons";
 import { Image } from "expo-image";
 import { useAuth, useUser } from "@clerk/clerk-expo";
 
